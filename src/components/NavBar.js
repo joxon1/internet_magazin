@@ -13,8 +13,8 @@ const NavBar = () => {
       <Container>
         <NavLink style={{ color: "white" }} to={SHOP_ROUTE}>-Telshop- </NavLink>
         {user.isAuth ? <Nav className="d-flex justify-content-evenly" style={{ color: "white" }} >
-          <Button variant={"outline-light"}>Админ панель</Button>
-          <Button variant={"outline-light"}>Выйти</Button>
+          <Button variant={"outline-light"} className="me-2">Админ панель</Button>
+          <Button variant={"outline-light"} >Выйти</Button>
         </Nav>
         : <Nav className="d-flex justify-content-evenly" style={{ color: "white" }} >
         <Button variant={"outline-light"}onClick={()=>user.setIsAuth(true)}>Авторизация</Button>
